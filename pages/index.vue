@@ -2,5 +2,6 @@
 	<NuxtLayout>
 		<HomeRows />
 		<HomeStories />
+		<HomeFeatures />
 	</NuxtLayout>
 </template>
