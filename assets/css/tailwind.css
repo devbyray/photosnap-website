@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    p {
+        @apply text-[15px] line-height-[25px] font-normal;
+    }
+}

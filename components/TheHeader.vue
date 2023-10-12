@@ -10,7 +10,7 @@
 				<nuxt-link to="/pricing">Pricing</nuxt-link>
 			</nav>
             <div>
-                <button>Get an invite</button>
+                <Button>Get an invite</Button>
             </div>
 		</div>
 	</header>
@@ -18,10 +18,10 @@
 
 <style scoped>
     header {
-        padding: 1rem 0;
+        @apply py-4 h-[72px];
     }
     .header-wrapper {
-        @apply mx-auto max-w-5xl flex justify-between
+        @apply mx-auto max-w-5xl flex justify-between items-center
     }
     nav {
         @apply flex gap-4 items-center;
@@ -31,8 +31,5 @@
     }
     nav a:hover {
         color: #000;
-    }
-    button {
-        @apply bg-black hover:bg-[#DFDFDF] text-white hover:text-black px-4 py-2 text-sm uppercase border-none hover:border-none transition-all duration-300 ease-in-out;
     }
 </style>
