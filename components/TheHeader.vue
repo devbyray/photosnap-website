@@ -21,7 +21,7 @@
         @apply py-4 h-[72px];
     }
     .header-wrapper {
-        @apply mx-auto max-w-5xl flex justify-between items-center
+        @apply mx-auto max-w-5xl flex justify-between items-center px-4 lg:px-0
     }
     nav {
         @apply flex gap-4 items-center;

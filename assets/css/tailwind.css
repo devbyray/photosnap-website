@@ -4,6 +4,6 @@
 
 :root {
     p {
-        @apply text-[15px] line-height-[25px] font-normal;
+        @apply text-[15px] leading-[25px] font-normal;
     }
 }
