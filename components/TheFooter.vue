@@ -1,7 +1,7 @@
 <template>
   <footer class="bg-black">
     <div class="mx-auto max-w-6xl py-16 px-4 flex flex-col items-center md:grid md:grid-cols-2 md:items-start">
-      <div class="first-col md:flex md:flex-col">
+      <div class="mb-12 md:mb-0 md:flex md:flex-col lg:grid lg:grid-cols-2">
         <div class="logo">
           <TheLogo />
         </div>
@@ -20,7 +20,7 @@
         </nav>
       </div>
 
-      <div class="third-col md:flex md:flex-col md:justify-between h-full md:items-end">
+      <div class="third-col flex flex-col gap-12 items-center md:justify-between h-full md:items-end">
         <div>
           <nuxt-link to="/" class="text-sm uppercase flex gap-4 items-center"
             ><span>Get an invite</span>
@@ -46,7 +46,7 @@
   @apply flex justify-center gap-4 mb-12 md:justify-start md:row-start-3 md:order-last md:mb-0;
 }
 .links {
-  @apply flex flex-col items-center gap-4 mb-24 md:flex-row md:mb-16;
+  @apply flex flex-col items-center gap-4 mb-24 md:flex-row md:mb-16 lg:flex-col lg:items-start lg:mb-2 lg:row-span-3;
 }
 nav a {
   @apply text-white hover:text-gray-500 uppercase text-sm;
