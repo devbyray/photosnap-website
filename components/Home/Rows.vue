@@ -1,5 +1,5 @@
 <template>
-	<GridTextLeft classLeft="bg-black text-white" mobileReverse>
+	<GridTextLeft classLeft="bg-black text-white relative" mobileReverse>
 		<template v-slot:left>
 			<h2
 				class="text-[32px] leading-[40px] lg:text-[40px] lg:leading-[48px] uppercase font-semibold tracking-wide"
@@ -13,6 +13,7 @@
 			<nuxt-link to="/" class="text-sm uppercase flex gap-4 items-center"
 				><span>Get an invite</span> <img src="/images/shared/desktop/arrow-white.svg" class="max-h-[12px]"
 			/></nuxt-link>
+			<TheGradient vertical class="absolute left-0" />
 		</template>
 		<template v-slot:right>
 			<picture>

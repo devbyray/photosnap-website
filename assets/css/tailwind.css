@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 :root {
+    --gradient-blue: #5A77FF;
+    --gradient-pink: #BC7198;
+    --gradient-yellow: #FFC593;
+
     p {
         @apply text-[15px] leading-[25px] font-normal;
     }
