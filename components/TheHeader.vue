@@ -1,7 +1,7 @@
 <template>
   <header class="bg-white">
     <div class="header-wrapper">
-      <div>Photosnap</div>
+      <div><TheLogo black /></div>
       <nav>
         <nuxt-link to="/">Stories</nuxt-link>
         <nuxt-link to="/features">Features</nuxt-link>
