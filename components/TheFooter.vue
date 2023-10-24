@@ -1,13 +1,11 @@
 <template>
   <footer class="bg-black">
-    <div class="footer-wrapper">
-      <div class="first-col">
-        <div class="col-span-1 row-span-1 max-h-[16px] md:mb-4">
+    <div class="mx-auto max-w-6xl py-16 px-4 flex flex-col items-center md:grid md:grid-cols-2 md:items-start">
+      <div class="first-col md:flex md:flex-col">
+        <div class="logo">
           <TheLogo />
         </div>
-        <nav
-          class="socialmedia "
-        >
+        <nav class="socialmedia">
           <nuxt-link class="inline-block" to="/"><IconsFacebook /></nuxt-link>
           <nuxt-link class="inline-block" to="/"><IconsYoutube /></nuxt-link>
           <nuxt-link class="inline-block" to="/"><IconsTwitter /></nuxt-link>
@@ -22,7 +20,7 @@
         </nav>
       </div>
 
-      <div class="third-col">
+      <div class="third-col md:flex md:flex-col md:justify-between h-full md:items-end">
         <div>
           <nuxt-link to="/" class="text-sm uppercase flex gap-4 items-center"
             ><span>Get an invite</span>
@@ -38,28 +36,19 @@
 </template>
 
 <style scoped>
-.footer-wrapper {
-  @apply mx-auto max-w-6xl grid md:grid-cols-2 lg:grid-cols-5 gap-8 px-4 py-16 lg:px-0;
-}
-.first-col {
-  @apply grid lg:grid-cols-2 lg:col-span-3 md:auto-rows-auto md:gap-4;
-}
-.third-col {
-  @apply flex flex-col justify-between items-end lg:col-span-2 md:justify-between;
+.logo {
+  @apply h-[16px] mb-6 md:mb-10;
 }
 .third-col a {
   @apply text-white hover:underline;
 }
-.links {
-  @apply flex gap-4 lg:flex-col items-start lg:col-start-2 lg:row-start-1 lg:row-span-2 md:row-start-2 md:flex-row md:mb-20;
-}
 .socialmedia {
-  @apply flex gap-4 gap-4 items-center lg:col-start-1 lg:row-start-2 max-h-[20px] self-end;
+  @apply flex justify-center gap-4 mb-12 md:justify-start md:row-start-3 md:order-last md:mb-0;
+}
+.links {
+  @apply flex flex-col items-center gap-4 mb-24 md:flex-row md:mb-16;
 }
 nav a {
   @apply text-white hover:text-gray-500 uppercase text-sm;
 }
-/* nav a:hover {
-  color: #000;
-} */
 </style>
