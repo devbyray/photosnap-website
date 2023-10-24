@@ -18,7 +18,7 @@ const imagePath = `/images/features/desktop/${ props.image }.svg`
 </script>
 
 <template>
-	<div class="flex flex-col justify-center items-center gap-4 text-center max-w-[310px] md:max-w-[457px]">
+	<div class="flex flex-col justify-center items-center gap-4 text-center max-w-[310px] sm:max-w-[457px]">
 		<div class="h-[72px] flex items-center">
             <img :src="imagePath" alt="responsive" class="max-w-[70px] mb-8" />
         </div>

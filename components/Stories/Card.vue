@@ -32,13 +32,13 @@ const imageDesktop = `/images/stories/desktop/${props.image}.jpg`;
 
 <template>
   <div
-    class="relative lg:hover:-translate-y-6 transition"
+    class="relative md:hover:-translate-y-6 transition"
     @mouseover="toggleHover"
     @mouseleave="leaveHover"
   >
     <nuxt-link to="/">
       <picture>
-        <source media="(max-width: 639px)" :srcset="imageMobile" />
+        <source media="(max-width: 640px)" :srcset="imageMobile" />
         <source media="(min-width: 1024px)" :srcset="imageDesktop" />
         <img
           :src="imageDesktop"

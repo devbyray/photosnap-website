@@ -3,7 +3,7 @@
     <div class="header-wrapper">
       <div><TheLogo black /></div>
       <nav>
-        <nuxt-link to="/">Stories</nuxt-link>
+        <nuxt-link to="/stories">Stories</nuxt-link>
         <nuxt-link to="/features">Features</nuxt-link>
         <nuxt-link to="/pricing">Pricing</nuxt-link>
       </nav>
@@ -19,10 +19,10 @@ header {
   @apply py-4 h-[72px];
 }
 .header-wrapper {
-  @apply mx-auto max-w-5xl flex justify-between items-center px-4 lg:px-0;
+  @apply mx-auto max-w-5xl flex justify-between items-center px-4 md:px-0;
 }
 nav {
-  @apply flex gap-4 items-center;
+  @apply flex gap-8 items-center;
 }
 nav a {
   @apply text-gray-500 uppercase text-sm;

@@ -10,7 +10,7 @@ const props = defineProps({
 <template>
   <div
     class=""
-    :class="{ 'w-full h-[6px] gradient': !props.vertical, 'w-[6px] h-[50%] gradient': props.vertical }"
+    :class="{ 'w-full h-[6px] gradient': !props.vertical, 'w-[6px] h-full gradient': props.vertical }"
   ></div>
 </template>
 
