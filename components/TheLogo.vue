@@ -11,5 +11,5 @@ const path = props.black ? 'images/logo-black.svg' : 'images/logo.svg'
 </script>
 
 <template>
-  <img :src="path" />
+  <img :src="path" class="min-w-[170px]" />
 </template>

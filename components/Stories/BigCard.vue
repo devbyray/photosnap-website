@@ -45,7 +45,7 @@ const imageDesktop = `/images/stories/desktop/${props.image}.jpg`
 			<footer
 				class="bg-black md:bg-transparent md:absolute md:bottom-0 md:left-0 flex justify-center md:flex-col md:justify-end px-8 py-16 md:py-0 gap-1 text-white w-full h-full bg-gradient-to-b from-white/0 to-black/75"
 			>
-				<div class="flex flex-col h-full md:pl-24 justify-center max-w-5xl z-10">
+				<div class="flex flex-col h-full md:pl-24 justify-center max-w-5xl z-[1]">
 					<div class="flex flex-col md:max-w-[387px] gap-5">
 						<span class="uppercase">Last month's featured story</span>
 						<h3 class="text-[40px] leading-[48px] font-semibold tracking-wide uppercase">
