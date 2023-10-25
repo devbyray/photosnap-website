@@ -1,4 +1,11 @@
 <script lang="ts" setup>
+const featuredStory = {
+      title: 'Hazy Full Moon Of Appalachia',
+      image: 'moon-of-appalacia',
+      date: 'March 2nd 2020',
+      author: 'John Appleseed',
+      description: 'The dissected plateau area, while not actually made up of geological mountains, is popularly called "mountains," especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely rugged.'
+}
 const stories = [
 	{
 		title: 'The Mountains',
@@ -100,9 +107,9 @@ const stories = [
 </script>
 
 <template>
-	<section>
-            <StoriesBigCard class="col-span-4" title="Hazy Full Moon Of Appalachia" image="moon-of-appalacia" date="March 2nd 2020" author="John Applessed" />
-		<div class="mx-auto max-w-screen-2xl sm:grid sm:grid-cols-2 md:grid-cols-4">
+	<section class="mx-auto max-w-screen-2xl">
+            <StoriesBigCard class="col-span-4" :title="featuredStory.title" :image="featuredStory.image" :date="featuredStory.date" :author="featuredStory.author" :description="featuredStory.description" />
+		<div class="sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
 			<template v-for="story in stories">
 				<StoriesCard :title="story.title" :image="story.image" :date="story.date" :author="story.author" />
 			</template>

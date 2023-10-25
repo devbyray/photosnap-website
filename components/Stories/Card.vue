@@ -56,7 +56,7 @@ const imageDesktop = `/images/stories/desktop/${props.image}.jpg`;
           </h3>
           <p class="mb-4">by {{ props?.author }}</p>
           <div class="w-full border-t border-[#979797] pt-4">
-            <div class="flex justify-between">
+            <div class="flex justify-between items-center">
               <span class="uppercase text-sm">Read story</span>
               <img
                 src="/images/shared/desktop/arrow-white.svg"
@@ -69,8 +69,8 @@ const imageDesktop = `/images/stories/desktop/${props.image}.jpg`;
       </footer>
     </nuxt-link>
     <TheGradient
-      :class="{ hidden: !hover, block: hover }"
-      class="absolute left-0 bottom-0"
+      :class="{ 'opacity-0': !hover, 'opacity-0 md:opacity-100': hover }"
+      class="absolute left-0 bottom-0 transition"
     />
   </div>
 </template>
