@@ -23,7 +23,7 @@ const prices = [
 
 <template>
 	<div class="bg-white dark:bg-gray-400 py-16 px-4">
-		<div class="flex gap-4 mx-auto max-w-6xl flex-col md:flex-row md:flex-nowrap">
+		<div class="grid gap-4 mx-auto max-w-6xl lg:grid-cols-3">
 			<template v-for="price in prices">
 				<PricingCard
 					:title="price.title"
