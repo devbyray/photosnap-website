@@ -11,5 +11,7 @@ const path = props.black ? 'images/logo-black.svg' : 'images/logo.svg'
 </script>
 
 <template>
-  <img :src="path" class="min-w-[170px]" />
+  <nuxt-link to="/">
+    <img :src="path" class="min-w-[170px]" />
+  </nuxt-link>
 </template>
