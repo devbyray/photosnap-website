@@ -29,8 +29,8 @@ const props = defineProps({
 		class="mx-auto max-w-8xl overflow-hidden flex sm:grid sm:grid-cols-3 md:grid-cols-7"
 			:class="mobileReverse ? 'flex-col-reverse' : 'flex-col'"
 		>
-			<div class="sm:col-span-2 md:col-span-3 flex justify-center items-center relative" :class="props?.classLeft">
-				<div :class="{textbox: props?.gradientBar}" class="max-w-[316px] md:max-w-[387px] md:px-6 flex flex-col gap-8 justify-start items-start py-16">
+			<div class="px-4 lg:px-0 sm:col-span-2 md:col-span-3 flex justify-center items-center relative" :class="props?.classLeft">
+				<div :class="{'textbox': props?.gradientBar}" class="max-w-[316px] md:max-w-[387px] md:px-6 flex flex-col gap-8 justify-start items-start py-16">
 					<div class="relative">
 						<slot name="left" />
 					</div>
@@ -46,11 +46,7 @@ const props = defineProps({
 <style>
 .textbox:after {
 	content: '';
-	width: 6px;
-	height: 50%;
-    background-image: linear-gradient(2deg, var(--gradient-yellow), var(--gradient-pink), var(--gradient-blue));
-	position: absolute;
-	top: 25%;
-	left: 0;
+    background-image: linear-gradient(4deg, var(--gradient-yellow), var(--gradient-pink), var(--gradient-blue));
+	@apply w-[128px] md:w-[6px] h-[6px] md:h-[50%] absolute top-0 md:top-[25%] md:left-0;
 }
 </style>

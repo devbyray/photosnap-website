@@ -7,6 +7,9 @@
     --gradient-pink: #BC7198;
     --gradient-yellow: #FFC593;
 
+    body {
+        @apply dark:bg-black bg-gray-200;
+    }
     p {
         @apply text-[15px] leading-[25px] font-normal;
     }

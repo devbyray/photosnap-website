@@ -6,7 +6,7 @@ const toggleMobileSub = () => {
 </script>
 
 <template>
-	<header class="bg-white w-full flex">
+	<header class="bg-white dark:bg-gray-400 w-full flex">
 		<div class="desktop-header-wrapper">
 			<div><TheLogo black /></div>
 			<nav class="links">
@@ -70,7 +70,7 @@ nav {
 	@apply flex gap-8 items-center;
 }
 nav a {
-	@apply text-gray-500 uppercase text-sm;
+	@apply text-gray-500 dark:text-gray-700 dark:hover:underline uppercase text-sm;
 }
 nav a:hover {
 	color: #000;
