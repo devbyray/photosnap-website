@@ -1,6 +1,6 @@
 <template>
   <div class="mx-auto max-w-screen-2xl">
-    <GridTextLeft classLeft="bg-black text-white" mobileReverse>
+    <GridTextLeft classLeft="bg-black text-white" mobileReverse gradientBar>
       <template v-slot:left>
         <h2
           class="text-[32px] leading-[40px] md:text-[40px] md:leading-[48px] uppercase font-semibold tracking-wide"

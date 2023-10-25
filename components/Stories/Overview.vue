@@ -102,7 +102,7 @@ const stories = [
             image: 'land-of-dreams',
             date: 'February 25th 2020',
             author: 'William Malcolm'
-      }
+      },
 ]
 </script>
 
@@ -110,8 +110,8 @@ const stories = [
 	<section class="mx-auto max-w-screen-2xl">
             <StoriesBigCard class="col-span-4" :title="featuredStory.title" :image="featuredStory.image" :date="featuredStory.date" :author="featuredStory.author" :description="featuredStory.description" />
 		<div class="sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-			<template v-for="story in stories">
-				<StoriesCard :title="story.title" :image="story.image" :date="story.date" :author="story.author" />
+			<template v-for="(story, index) in stories">
+				<StoriesCard :title="story.title" :image="story.image" :date="story.date" :author="story.author" :async="index > 6" />
 			</template>
 		</div>
 	</section>

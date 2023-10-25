@@ -30,7 +30,7 @@ const props = defineProps({
 			:class="mobileReverse ? 'flex-col-reverse' : 'flex-col'"
 		>
 			<div class="sm:col-span-2 md:col-span-3 flex justify-center items-center relative" :class="props?.classLeft">
-				<div class="textbox max-w-[316px] md:max-w-[387px] md:px-6 flex flex-col gap-8 justify-start items-start py-16">
+				<div :class="{textbox: props?.gradientBar}" class="max-w-[316px] md:max-w-[387px] md:px-6 flex flex-col gap-8 justify-start items-start py-16">
 					<div class="relative">
 						<slot name="left" />
 					</div>

@@ -27,7 +27,7 @@ const toggleMobileSub = () => {
         </button>
 			</div>
 		</div>
-		<div class="mobile-toggle" :class="{hidden: mobileSub, '-top-10 opacity-0': !mobileSub}">
+		<div class="mobile-toggle" :class="{'hidden w-0 opacity-0': !mobileSub, '-top-10 w-full opacity-100': mobileSub}">
 			<nav class="links">
 				<nuxt-link to="/stories">Stories</nuxt-link>
 				<nuxt-link to="/features">Features</nuxt-link>
@@ -38,12 +38,12 @@ const toggleMobileSub = () => {
 			</div>
 		</div>
 	</header>
-  <div class="overlay" :class="{'w-0 h-0 opacity-0': !mobileSub, 'opacity-50 md:opacity-0': mobileSub}" @click="toggleMobileSub"></div>
+  <div class="overlay" :class="{'w-0 h-0 opacity-0': !mobileSub, 'opacity-50 w-full h-full md:h-0 md:opacity-0 md:w-0': mobileSub}" @click="mobileSub = false"></div>
 </template>
 
 <style scoped>
 header {
-	@apply py-4 h-[72px] flex flex-col items-start justify-center px-4 relative z-[20];
+	@apply py-4 h-[72px] flex flex-col items-start justify-center px-4 sticky top-0 z-[20];
 }
 .desktop-header-wrapper {
 	@apply mx-auto max-w-5xl w-full hidden md:flex md:justify-between items-center;
@@ -52,10 +52,10 @@ header {
 	@apply mx-auto max-w-5xl md:hidden flex flex-col w-full px-2;
 }
 .mobile-toggle {
-	@apply transition absolute overflow-hidden top-[72px] left-0 flex flex-col gap-6 w-full bg-white px-8 py-4 pt-12 justify-center items-center md:hidden z-[9];
+	@apply transition absolute overflow-hidden top-[72px]  left-0 flex flex-col gap-6 bg-white px-8 py-4 pt-12 justify-center items-center md:hidden z-[9] md:w-0;
 }
 .overlay {
-  @apply transition absolute overflow-hidden top-[72px] left-0 w-full h-full bg-black z-[8] cursor-pointer;
+  @apply transition absolute overflow-hidden top-[72px] left-0 bg-black z-[8] cursor-pointer;
 }
 .mobile-toggle .links {
 	@apply flex flex-col gap-6;

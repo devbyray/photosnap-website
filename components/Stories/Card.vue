@@ -16,6 +16,10 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  async: {
+    type: Boolean,
+    default: false,
+  },
 });
 
 const hover = ref(false);
@@ -44,6 +48,7 @@ const imageDesktop = `/images/stories/desktop/${props.image}.jpg`;
           :src="imageDesktop"
           alt="Beautiful stories every time"
           class="object-cover w-full h-full overflow-hidden"
+          :loading="props?.async ? 'lazy' : null"
         />
       </picture>
       <footer
