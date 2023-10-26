@@ -1,6 +1,25 @@
-# Nuxt 3 Minimal Starter
+# Photosnap Website Challenge
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Our team challenged ourselves to build this beautifull design in the techniques you are comfortable with.
+
+## What I used
+
+- Vue.js
+- Nuxt.js
+- Tailwind CSS
+
+It is hosted on Vercel: [CHECK RESULT](https://photosnap.byrayray.dev)
+
+## What I changed?
+
+- This design was created for light-mode, so I added a dark-mode view during the implementation.
+- The design wasn't designed for checking on a 4K monitor, so I added my own creativity and implemented a better view on big monitors as well.
+
+![](./docs//homepage.jpg)
+
+# Want to run this project?
+
+Follow the instructions below 👇
 
 ## Setup
 
