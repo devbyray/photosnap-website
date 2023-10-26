@@ -5,8 +5,6 @@ const props = defineProps({
         value: false
     }
 })
-console.log('props: ', props)
-
 const path = props.black ? 'images/logo-black.svg' : 'images/logo.svg'
 </script>
 
